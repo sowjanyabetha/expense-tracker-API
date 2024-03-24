@@ -37,7 +37,7 @@ Run the application:
 - DELETE /api/expense/{id} - Delete an expense by ID.
   
 # Sample Data
-`[
+```[
     {
         "id": "66003d9b784ad82357393e06",
         "expenseName": "Netflix",
@@ -45,19 +45,19 @@ Run the application:
         "expenseAmount": 1500
     }
 ]
-`
+```
 # Usage
 # Creating a New Expense
 Send a POST request to /api/expense with the following JSON payload:
-`{
+```{
     "expenseName": "Groceries",
     "expenseCategory": "GROCERIES",
     "expenseAmount": 50.00
 }
-`
+```
 
 # Updating an Expense
-Send a PUT request to /api/expense/{id} with the expense ID and updated JSON payload.
+Send a PUT request to `/api/expense/{id}` with the expense ID and updated JSON payload.
 
 # Deleting an Expense
-Send a DELETE request to /api/expense/{id} with the expense ID.
+Send a DELETE request to `/api/expense/{id}` with the expense ID.
